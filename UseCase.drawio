@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case" id="1_UseCase_Diagram">
+    <mxGraphModel dx="981" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kh" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" value="Khách hàng" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="nvk" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" value="Nhân viên kho" vertex="1">
+          <mxGeometry height="60" width="30" x="730" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="sb" parent="1" style="swimlane;html=1;startSize=30;container=1;collapsible=0;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontStyle=1;" value="Hệ thống Đặt hàng Online RikkeiFastMart" vertex="1">
+          <mxGeometry height="440" width="480" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="sb" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" value="Đăng nhập" vertex="1">
+          <mxGeometry height="70" width="180" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="sb" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" value="Đặt hàng Online" vertex="1">
+          <mxGeometry height="80" width="180" x="40" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="sb" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" value="Áp dụng mã giảm giá" vertex="1">
+          <mxGeometry height="70" width="180" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="sb" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" value="Cập nhật tồn kho" vertex="1">
+          <mxGeometry height="70" width="170" x="270" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="kh" style="html=1;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=#FFFFFF;endArrow=none;" target="uc1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="kh" style="html=1;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=#FFFFFF;endArrow=none;" target="uc2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="nvk" style="html=1;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=#FFFFFF;endArrow=none;" target="uc4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="uc2" style="html=1;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;" target="uc1" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="uc3" style="html=1;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=#FFFFFF;endArrow=open;endSize=10;dashed=1;" target="uc2" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
